@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Survey Form FCC FreeCodeCamp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Tell us why you want to join our community</p>
+    <form class="form-container" action="#" id="survey-form">
+      <div class="item">
+        <label for="name" id="name-label"><span id="ast">&ast;</span>Name</label><br>
+      <input type="name" class="no-border" id="name" placeholder="Name" required>
+    </div>
+      <div class="item">
+        <label for="email" id="email-label"><span id="ast">&ast;</span>Email</label><br>
+      <input type="email"  class="no-border" id="email" placeholder="Email Id" required>
+    </div>
+      <div class="item">
+        <label for="number" id="number-label"><span id="ast">&ast;</span>Age</label><br>
+      <input type="number" class="no-border" id="number" placeholder="Age" required min='1' max='100'>
+    </div>
+      <div class="item">
+        <label for="select">What defines you best&quest;</label><br>
+      <select name="role" id="dropdown" required>
+        <option value="">--Select an option--</option>
+        <option value="Student">Student</option>
+        <option value="Teacher">Teacher</option>
+        <option value="Professor">Professor</option>
+        <option value="Employee">Employee</option>
+        <option value="Parent">Parent</option>
+        <option value="Artist">Artist</option>
+        <option value="Starter">Starter&frasl;Beginner</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+      <div class="item">
+        <label for="radio-buttons"><span id="ast">&ast;</span>Select one</label><br>
+      <input type="radio" name="age" value="M" checked><span>Male</span><br>
+      <input type="radio" name="age" value="F"><span>Female</span><br>
+      <input type="radio" name="age" value="O"><span>Other</span>
+    </div>
+      <div class="item">
+        <label for="checkbox"><span id="ast">&ast;</span>Tell us why you want to join&quest;</label><br>
+      <input type="checkbox" name="query" value="1" checked><span>To try a new field&frasl;experience</span><br>
+      <input type="checkbox" name="query" value="2"><span>Take life to a new level</span><br>
+      <input type="checkbox" name="query" value="3"><span>To grow your business</span><br>
+      <input type="checkbox" name="query" value="4"><span>Professional&frasl;personal reasons</span><br>
+      <input type="checkbox" name="query" value="5"><span>Other</span>
+    </div>
+    <div class="item">
+      <label for="query">How do you reach us&quest;</label><br>
+      <select name="howyoureach" id="ask">
+        <option value="">--Select an option</option>
+        <option value="Friend">Friend</option>
+        <option value="Classmate">Classmate</option>
+        <option value="Work Place">Work Place</option>
+        <option value="Neighbor">Neighbor</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+      <div class="item">
+        <label for="comments">Enter your comments</label><br>
+        <textarea name="comments" rows="8" cols="50" wrap="hard" placeholder="Enter your comments"></textarea>
+      </div>
+      <div class="item">
+        <input type="submit" name="submit" id="submit" value="submit">
+      </div>
+    </form>
+  </body>
+</html>
