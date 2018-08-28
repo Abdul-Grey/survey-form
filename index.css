@@ -1,0 +1,38 @@
+html,body{
+  height: 100%;
+  font-family: 'Lato','Roboto',sans-serif;
+  font-size: 20px;
+  background-color: wheat;
+}
+h1,p{
+  vertical-align: center;
+  text-align: center;
+}
+.form-container{
+  display: flex;
+  flex-direction: column;
+  flex: 2 2 auto;
+  background-color: white;
+  margin: 2% 30%;
+}
+.no-border{
+  border: 0;
+  border-bottom: 1px solid bottom;
+  width: 60%;
+  height: 30px;
+}
+.no-border:focus{
+  outline: none;
+}
+.item{
+  background: #eee;
+  margin: 5px;
+  padding: 7px;
+}
+input,select{
+  margin-left: 15px !important;
+}
+#ast{
+  color: red;
+  padding-right: 0.8px;
+}
